@@ -1,0 +1,12 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+{% block title %}About - Developer Portfolio{% endblock %}
+{% block content %}
+<section id="about">
+    <h2 class="text-2xl text-center mb-6">About Me</h2>
+    <div class="flex justify-center">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile" class="rounded-full w-32 h-32 mb-4">
+    </div>
+    <p class="text-center">I am a professional developer with experience in various technologies...</p>
+</section>
+{% endblock %}

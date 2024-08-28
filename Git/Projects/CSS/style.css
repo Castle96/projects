@@ -1,0 +1,71 @@
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+::before, ::after{
+    box-sizing: border-box;
+}
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    opacity: 1;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.aside{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.main{
+    background: var(--bg-black-50);
+    position: absolute;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    max-width: 600px;
+    width: 100%;
+    padding: 50px;
+    background: var(--bg-black-100);
+    border-radius: 5px;
+    color: var(--text-black-900);
+    margin: 0 15px;
+}
